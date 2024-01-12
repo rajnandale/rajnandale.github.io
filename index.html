@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Project Name: Personal Portfolio Website
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website | KamleshRathod</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header section -->
+      <section id="header">
+        <div class="header-top">
+          <div class="logo">
+            <a href="#"><span>Raj</span>Portfolio</a>
+          </div>
+          <div class="nav-menu">
+            <ul id="sidemenu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+              <li><a href="#testimonial">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="bottom-left">
+            <h1 class="name">Raj <span>Nandale</span></h1>
+            <h3 class="profession">-Web Developer</h3>
+            <p class="short-desc">
+              Dynamic IT professional and aspiring IT engineer, driven by an
+insatiable curiosity for all things technical. My journey thus far has
+been a thrilling exploration of the digital realm, and I'm ready to
+leverage my technical prowess to conquer new horizons.
+            </p>
+            <a href="assets/my-cv.pdf" target="_blank" class="btn-cv" download
+              >Download CV</a
+            >
+          </div>
+          <div class="bottom-right">
+            <a href="https://www.linkedin.com/in/raj-nandale-9b0408283/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+
+            <a href="https://www.instagram.com/nandaleraj/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+            <a href="https://twitter.com/rajnandale"target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section id="about">
+        <div class="about-left">
+          <img src="assets/user-side.jpg" alt="user-sideimg" />
+        </div>
+        <div class="about-right">
+          <div class="section-title">
+            <h2 class="sub-title">About Me</h2>
+            <h3 class="title">Web Developer</h3>
+          </div>
+          <p class="desc">
+            I'm Raj Nandale, a web developer passionate about crafting clean and efficient code. Proficient in HTML, CSS, and JavaScript, I thrive on turning concepts into functional and visually appealing websites. Ready to embark on coding adventures—let's build something amazing together!
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br />JavaScript, Nodejs, Express</li>
+              <li>
+                <span>Python Package Developer</span><br /> Custom Py Libraries.
+              </li>
+              <li><span>Database Management</span><br />MySQL , MongoDB , PostgreSQL.
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Sep 2023 - Oct 2023</span><br />
+                Platform Development Intern at Ring Plus Aqua Limited.
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2021 - Current</span><br />BE in IT from Pune
+                Univeristy
+              </li>
+              <li>
+                <span>2019-2021</span><br />HSC from Pune
+                Univeristy
+              </li>
+              <li>
+                <span>2017-2019</span><br />SSC from Pune Univeristy
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Service section -->
+      <section id="service">
+        <div class="section-title">
+          <h2 class="sub-title">My Services</h2>
+          <h3 class="title">A brief of Offerting Services</h3>
+        </div>
+        <div class="services">
+          
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Crafting captivating websites with sleek design and powerful functionality for a standout online presence
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Python Package Development</h2>
+            <p>
+              Expert in Python and Pypi, turning ideas into intuitive and impactful development experiences. 
+            </p>
+          </div>
+
+          
+          <div>
+            <i class="fa-brands fa-java"></i>
+            <h2>Java Programming</h2>
+            <p>
+              Crafting robust and efficient solutions, turning code into functional and elegant applications. Let's code excellence together!
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Database Management</h2>
+            <p>
+              Ensuring seamless data organization and accessibility. Expertise in MySQL, PostgreSQL, and efficient database solutions for optimal performance.
+            </p>
+          </div>
+          
+        </div>
+      </section>
+      <!-- Testimonial section -->
+      <section id="testimonial">
+        <div class="section-title">
+          <h2 class="sub-title">Testimonial</h2>
+          <h3 class="title">People What Are Saying</h3>
+          <div class="testimonial-list">
+            <div class="review">
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="review-text">
+                Working closely with Raj Nandale has been a game-changer for our development projects. Their coding skills are top-notch, and the websites they create are not only functional but also visually impressive. A true asset to our team!"
+
+              </p>
+              <div class="review-by">
+                <div class="img">
+                  <img
+                    src="assets/testimonials-1.jpeg"
+                    alt="testimonials-1"
+                  />
+                </div>
+                <div class="info">
+                  <h3 class="name">Abhishek Shelar</h3>
+                  <h5 class="resignation">Web Developer</h5>
+                </div>
+              </div>
+            </div>
+            
+            <div class="review">
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="review-text">
+                "Raj Nandale is a creative force to be reckoned with. Their design concepts consistently exceed expectations, adding a touch of brilliance to every project. A reliable and innovative designer, Raj brings a unique flair to our creative endeavors."              </p>
+              <div class="review-by">
+                <div class="img">
+                  <img
+                    src="assets/testimonials-2.jpeg"
+                    alt="testimonials-2"
+                  />
+                </div>
+                <div class="info">
+                  <h3 class="name">Parth Gosavi</h3>
+                  <h5 class="resignation">Graphics Designer</h5>
+                </div>
+              </div>
+            </div>
+            <div class="review">
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="review-text">
+                "When it comes to navigating the financial markets, I always turn to Raj. Their insights and strategic approach to trading have been invaluable. Raj Nandale is not just a colleague but a trusted advisor in the world of finance. Truly grateful for their expertise!"
+              </p>
+              <div class="review-by">
+                <div class="img">
+                  <img
+                    src="assets/testimonials-3.jpeg"
+                    alt="testimonials-3"
+                  />
+                </div>
+                <div class="info">
+                  <h3 class="name">Kamlesh Rathod</h3>
+                  <h5 class="resignation">Trader</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <!-- Contact section -->
+      <section id="contact">
+        <div class="section-title">
+          <h2 class="sub-title">Contact</h2>
+          <h3 class="title">Get in Touch</h3>
+        </div>
+        <div class="content">
+          <div class="contact-left">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit">
+                Send Message <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+          <div class="vl"></div>
+          <div class="contact-right">
+            <div class="col address">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="info">
+                <h2 class="title">Address</h2>
+                <p>Nashik, Maharashtra, India: 423301</p>
+              </div>
+            </div>
+            <div class="col phone">
+              <i class="fa-solid fa-phone"></i>
+              <div class="info">
+                <h2 class="title">Phone</h2>
+                <p>+91 7581998164</p>
+              </div>
+            </div>
+            <div class="col email">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="info">
+                <h2 class="title">Email</h2>
+                <p>mail6164@duck.com</p>
+              </div>
+            </div>
+            <div class="col website">
+              <i class="fa-solid fa-globe"></i>
+              <div class="info">
+                <h2 class="title">Website</h2>
+                <p>www.domain.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            Copyright ©️ RajPortfolio | Made with
+            <i class="fa-solid fa-skull"></i> by
+            <a href="#">RajNandale</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
